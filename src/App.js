@@ -11,13 +11,15 @@ import {
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
 
-      <Home />
-      <Stuff />
-      <About />
+        <Home />
+        <Stuff />
+        <About />
 
-    </div>
+      </div>
+    </Router>
   );
 }
 

@@ -26,6 +26,23 @@ Create some components, for example:
 - About
 - Stuff
 
+## How do I use the Router?
+
+Wrap your *entire* App with it.
+
+```js
+    <Router>
+      <div className="App">
+
+        <Home />
+        <Stuff />
+        <About />
+
+      </div>
+    </Router>
+```
+
 ## How do I create a nav with react router?
+
 
 
