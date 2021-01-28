@@ -11,7 +11,7 @@ yarn add react-router-dom
 
 ```js
 import { 
-  Router,
+  BrowserRouter as Router,
   Link,
   Switch,
   Route
@@ -43,6 +43,23 @@ Wrap your *entire* App with it.
 ```
 
 ## How do I create a nav with react router?
+
+```js
+
+      <header>
+        <Link to="/">Home</Link>
+        <Link to="/stuff">Stuff</Link>
+        <Link to="/about">About</Link>
+      </header>
+
+```
+
+## How do I show one page at a time?
+
+```js
+
+```
+
 
 
 
