@@ -3,7 +3,7 @@ import Stuff from './components/Stuff';
 import About from './components/About';
 
 import { 
-  Router,
+  BrowserRouter as Router,
   Link,
   Switch,
   Route
@@ -14,10 +14,25 @@ function App() {
     <Router>
       <div className="App">
 
-        <Home />
-        <Stuff />
-        <About />
+      <header>
+        <Link to="/">Home</Link>
+        <Link to="/stuff">Stuff</Link>
+        <Link to="/about">About</Link>
+      </header>
 
+      <Switch>
+
+        <Route path="/">
+          <Home />
+        </Route>
+        <Route path="/stuff">
+          <Stuff />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+
+      </Switch>
       </div>
     </Router>
   );
